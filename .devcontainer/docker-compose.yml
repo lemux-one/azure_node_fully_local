@@ -1,0 +1,4 @@
+version: '3.8'
+services:
+  app:
+    command: /bin/sh -c "cd /app && if [ -f './package.json' ]; then npm install; else echo 'no package.json found'; fi && while sleep 1000; do :; done"
